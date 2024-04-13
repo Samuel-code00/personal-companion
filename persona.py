@@ -26,7 +26,7 @@ if prompt := st.chat_input("Start chatting ..."):
 
     # Display summarizer response in chat container
     with st.chat_message('assistant'):
-        message_placeholder = st.markdown("Thinking... |")
+        message_placeholder = st.markdown("...")
         full_response = " "
         # Get summary from Summarizer
         try:
