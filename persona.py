@@ -30,7 +30,7 @@ if prompt := st.chat_input("Start chatting ..."):
         full_response = " "
         # Get summary from Summarizer
         try:
-            result = model.generate_content(f' You are a personal AI companion. You give me responses to anything I ask you. You name is personal AI{prompt}')
+            result = model.generate_content(f' You are a personal AI companion. You give me responses to anything I ask you. You name is Personal AI{prompt}')
             full_response += result.text
             message_placeholder.markdown(full_response)
         except:
