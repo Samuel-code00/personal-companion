@@ -3,7 +3,7 @@ from model import model
 
 st.markdown("# Personal AI Companion")
 
-st.write("I am Gemini, I am here to help you and be your personal companion.")
+st.write("I am PERS AI, I am here to help you and be your personal companion.")
 
 # Create chat history
 if "messages" not in st.session_state:
@@ -30,7 +30,7 @@ if prompt := st.chat_input("Start chatting ..."):
         full_response = " "
         # Get summary from Summarizer
         try:
-            result = model.generate_content(f' You are a personal AI companion. You give me responses to anything I ask you. You name is Personal AI{prompt}')
+            result = model.generate_content(f' You are a personal AI companion. You give me responses to anything I ask you. Your name is PERS AI{prompt}')
             full_response += result.text
             message_placeholder.markdown(full_response)
         except:
